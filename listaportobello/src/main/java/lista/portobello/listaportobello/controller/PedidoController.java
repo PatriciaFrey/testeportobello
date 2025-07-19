@@ -17,6 +17,7 @@ public class PedidoController {
         this.service = service;
     }
 
+
     @PostMapping
     public ResponseEntity<Pedido> criar(@RequestBody Pedido pedido) {
         return ResponseEntity.ok(service.criarPedido(pedido));
@@ -33,5 +34,6 @@ public class PedidoController {
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
     }
+    
     
 }

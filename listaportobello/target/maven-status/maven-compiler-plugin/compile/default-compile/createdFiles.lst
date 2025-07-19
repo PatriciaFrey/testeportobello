@@ -4,3 +4,5 @@ lista\portobello\listaportobello\ListaportobelloApplication.class
 lista\portobello\listaportobello\model\ItemPedido.class
 lista\portobello\listaportobello\model\Pedido.class
 lista\portobello\listaportobello\service\PedidoService.class
+lista\portobello\listaportobello\config\CorsConfig$1.class
+lista\portobello\listaportobello\config\CorsConfig.class
