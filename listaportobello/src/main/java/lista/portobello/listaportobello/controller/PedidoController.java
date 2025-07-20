@@ -34,6 +34,11 @@ public class PedidoController {
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
     }
+@DeleteMapping("/{id}")
+public ResponseEntity<Void> deletarPedido(@PathVariable String id) {
+    service.deletarPorId(id); 
+    return ResponseEntity.noContent().build();
+}
     
     
 }
