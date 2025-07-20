@@ -36,7 +36,6 @@ public class PedidoService {
         return repository.findById(id);
     }
 
-    // ✅ Adicione este método:
     public void deletarPorId(String id) {
         repository.deleteById(id);
     }
